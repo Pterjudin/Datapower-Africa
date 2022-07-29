@@ -19,7 +19,7 @@ public class Dog {
       fields are accessed using: 
       the instance name, `.` operator, and the field name.
       */
-      fido.breed;
+      System.out.print(fido.breed);
       // "poodle"
     }
   }
