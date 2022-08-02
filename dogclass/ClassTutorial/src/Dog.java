@@ -14,12 +14,12 @@ public class Dog {
       create instance: 
       use 'new' operator and invoke constructor
       */
-      Dog fido = new Dog("poodle");
+      Dog bingo = new Dog("poodle");
       /* 
       fields are accessed using: 
       the instance name, `.` operator, and the field name.
       */
-      System.out.print(fido.breed);
+      System.out.print(bingo.breed);
       // "poodle"
     }
   }
