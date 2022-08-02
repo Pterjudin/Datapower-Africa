@@ -4,6 +4,8 @@
  * User should be able to ----> checkBalance, deposit, withdraw
  */
 
+import java.util.Scanner;
+
 public class BankAccount {
     int accountNumber;
     String accountName;
@@ -44,9 +46,13 @@ public class BankAccount {
         
     Timmy.checkBalance();
     // Expect 100000
-    Timmy.deposit(230000);
-    // 330000
-    Timmy.withdraw(2500);
-    // 330000 - 2500
+    
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter the deposit amount: ");  
+    double deposit = input.nextDouble();
+    
+    Timmy.deposit(deposit);   
+    // Close input
+    input.close();
     }
 }
