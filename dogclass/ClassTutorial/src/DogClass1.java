@@ -1,9 +1,9 @@
-public class Dog {
+public class DogClass1 {
     String breed;
     boolean hasOwner;
     int age;
     
-    public Dog(String dogBreed, boolean dogOwned, int dogYears) {
+    public DogClass1(String dogBreed, boolean dogOwned, int dogYears) {
       System.out.println("Constructor invoked!");
       breed = dogBreed;
       hasOwner = dogOwned;
@@ -12,8 +12,8 @@ public class Dog {
     
     public static void main(String[] args) {
       System.out.println("Main method started");
-      Dog fido = new Dog("poodle", false, 4);
-      Dog nunzio = new Dog("shiba inu", true, 12);
+      DogClass1 fido = new DogClass1("poodle", false, 4);
+      DogClass1 nunzio = new DogClass1("shiba inu", true, 12);
       boolean isFidoOlder = fido.age > nunzio.age;
       int totalDogYears = nunzio.age + fido.age;
       System.out.println("Two dogs created: a " + fido.breed + " and a " + nunzio.breed);
